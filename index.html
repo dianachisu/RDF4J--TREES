@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Copaci/style.css">
+        <script type="text/javascript" src="functii.js"></script>
+
+    </head>
+
+    <body>
+      <div class="container">
+      <p><input type="button" onclick="afisareCategorii()" value="Afiseaza categorii" class="buton-categ"></p>
+      <div class="div-categ">
+          <h3>Categorii de copaci</h3>
+          <ul class="a" id="categorii">
+          </ul>
+       </div>
+
+      <div class="div1" id="detalii-copaci">  
+        
+      </div>
+
+      <div class="div2">
+        <h3>Formular inserare copaci</h3>              
+        
+        <form id="inserare-copaci">
+          <table>
+            <th>
+              <input type="text" id="categorieSelectata" readonly style="display:none;">
+              <label for="denumire">Denumire:</label> <input type="text" id="denumire" >
+              <label for="inaltime">Inaltime:</label> <input type="text" id="inaltime"> 
+              <label for="varsta">Varsta:</label> <input type="number" id="varsta"> 
+              <label for="continent">Continent:</label> <input type="text" id="continent">
+              <label for="flori">Infloreste:</label> <input type="text" id="flori">
+              <label for="imagine">Imagine:</label> <input type="text" id="imagine">
+
+           </th>
+          <th><input type="button" onmouseover="inserareCopac()" value="Adaugare" class="buton-adaugare"></th>
+        </table>
+        <form>
+      </div>
+      </div>
+    </body>
+
+</html>
